@@ -1,0 +1,16 @@
+53010.0  /8.swf
+53011.0  /bin/cp
+53012.0  /usr/bin/strace
+53021.0  /18304/mounts
+53022.0  /filesystems
+53121.0  /18314/mounts
+53254.0  /filesystems
+53274.0  /var/cache/yum/updates/primary.sqlite
+53275.0  /var/tmp/etilqs_TxFoY121082AgP1
+53276.0  /var/tmp/etilqs_Kr4gmbaST5qrDe4
+53277.0  /filesystems
+53278.0  /filesystems
+53279.0  /var/cache/yum/fedora/Fedora-8-comps.xml
+53280.0  /var/cache/yum/updates/comps-f8.xml
+53281.0  /var/cache/yum/updates/updateinfo.xml.gz
+53030.1  192.168.200.2:53

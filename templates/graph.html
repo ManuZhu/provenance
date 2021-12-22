@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/table.html' import render_table %}
+{% from 'bootstrap/pagination.html' import render_pagination %}
+
+{% block content %}
+
+<h2>溯源图样本列表</h2>
+    {{ render_table(messages, titles, show_actions=True,
+                custom_actions = [('Compress', 'file-zip', url_for('data_compress', graph_id=':primary_key')),
+                                  ('Change', 'nut', url_for('data_change', graph_id=':primary_key')),
+                                  ('Run', 'play-fill', url_for('preprocess_graph', graph_id=':primary_key')),
+                                  ('Watch', 'layout-text-window', url_for('preprocess_watching', graph_id=':primary_key'))],
+                delete_url=url_for('delete_graph', graph_id=':primary_key'),
+                new_url=url_for('upload_graph'))
+            }}
+    {{ render_pagination(pagination) }}
+    <script type="text/javascript">
+        /*document.getElementsByClassName("action-icon text-decoration-none")[26].onclick=function(){
+            jQuery.messager.progress({
+                title: '加载中..',
+                msg: '请等待...',
+            });
+            var url = '/graph/7/compress';
+            var t = setTimeout(function () {
+                jQuery.messager.progress('close');
+                jQuery.messager.alert('错误提示', '网络连接超时,请重试');
+            }, 50000);
+            jQuery.get(url, function (data) {
+                jQuery.messager.progress('close');
+                clearTimeout(t);
+                alert(data);
+            }, text);
+            return false;
+        };*/
+        guide1_2();
+    </script>
+{% endblock %}

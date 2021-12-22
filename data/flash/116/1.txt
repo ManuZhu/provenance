@@ -1,0 +1,5 @@
+52790.0  /16.swf
+52791.0  /bin/cp
+52792.0  /usr/bin/strace
+52801.0  /17499/mounts
+52802.0  /filesystems

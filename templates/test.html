@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/table.html' import render_table %}
+{% from 'bootstrap/pagination.html' import render_pagination %}
+
+{% block content %}
+
+<h2>选择测试样本</h2>
+    {{ render_table(messages, titles, show_actions=True,
+                custom_actions = [('Select', 'file-earmark-check', url_for('predict_model', model_id=':primary_key', flag = '3'))]) }}
+    {{ render_pagination(pagination) }}
+    <script>
+        guide1_7();
+    </script>
+{% endblock %}

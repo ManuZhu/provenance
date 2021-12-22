@@ -1,0 +1,5 @@
+79529.0  /14.swf
+79530.0  /bin/cp
+79531.0  /usr/bin/strace
+79540.0  /8212/mounts
+79541.0  /filesystems

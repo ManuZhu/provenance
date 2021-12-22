@@ -1,0 +1,5 @@
+21.0  /2.swf
+22.0  /bin/cp
+23.0  /usr/bin/strace
+32.0  /5882/mounts
+33.0  /filesystems

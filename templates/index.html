@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section id="one" class="main style2">
+        <div class="container">
+            <div class="row gtr-150">
+                <header class="major">
+                    <h2>为什么选择我们</h2>
+                </header>
+                <p style="font-size:20px;">目前，面对海量的系统日志，传统检测平台难以满足用户对于<strong>检测速度</strong>和<strong>存储效率</strong>的高要求，同时，随着诸如APT攻击等手段的入侵频率越来越高，传统平台发现入侵并修补漏洞的做法忽视了攻击过程中遗留的问题以及对系统造成的破坏，难以符合用户对入侵检测平台的预期。针对这些传统检测平台中出现的问题，我们创新地将
+                    <strong>高效存储</strong>、<strong>攻击溯源</strong>、<strong>深度学习</strong>等技术结合起来，为用户系统的安全带来切实的提升</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="two" class="main style1">
+        <div class="container">
+            <div class="row gtr-150">
+                <div class="col-6 col-12-medium">
+                    <header class="major">
+                        <h2>存储检测一体化</h2>
+                    </header>
+                    <p style="font-size:20px;">
+                        在传统入侵检测系统中，检测数据的读取速度以及冗余信息的去除一直是阻碍检测性能提高的重要因素。<br/>
+                        本平台将存储和检测合二为一，通过字典编码、聚合压缩等算法优化存储，去除冗余，进而提升检测性能。
+                    </p>
+                    <input id="guide1" type="button" value="查看指引" onclick="guide1_1()"/>
+                </div>
+                <div class="col-6 col-12-medium imp-medium">
+                    <span class="image fit"><img src="/static/images/pic_size.jpeg" alt="" /></span>
+                    <span class="image fit"><img src="/static/images/pic_time.jpeg" alt="" /></span>
+                    <span class="image fit"><img src="/static/images/pic_test.png" alt="" /></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="three" class="main style1">
+        <div class="container">
+            <div class="row gtr-150">
+                <div class="col-6 col-12-medium imp-medium">
+                    <span class="image fit"><img src="/static/images/pic_gan.jpeg" alt="" /></span>
+                    <span class="image fit"><img src="/static/images/pic_network.jpg" alt="" /></span>
+                    <span class="image fit"><img src="/static/images/pic_rnn.png" alt="" /></span>
+                </div>
+                <div class="col-6 col-12-medium">
+                    <header class="major">
+                        <h2>深度学习，样本生成</h2>
+                    </header>
+                    <p style="font-size:20px;">
+                        利用深度学习进行入侵检测的平台常常会有训练样本不足的问题。本平台创造性地利用生成对抗网络（GAN）生成大量的训练样本，进一步提升模型的训练质量。<br>
+                        同时本平台允许用户自己决定神经网络模型，针对不同的数据类型和应用场景有更大的灵活性。
+                    </p>
+                    <input id="guide2" type="button" value="查看指引" onclick="guide2_1()"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="four" class="main style1">
+        <div class="container">
+            <div class="row gtr-150">
+                <div class="col-6 col-12-medium">
+                    <header class="major">
+                        <h2>攻击路径展示</h2>
+                    </header>
+                    <p style="font-size:20px;">
+                        为了应对传统平台仅能发现漏洞，但是却难以发现入侵行为本身对系统造成的破坏和过程中对系统的影响这一问题。<br>
+                        本平台通过拓扑图能够清晰展示完整的攻击行为，方便管理员快速还原攻击路径，定位过程中的文件损坏与数据泄露，追踪具体的攻击来源，通知用户完善漏洞并消除剩余的安全隐患。
+                    </p>
+                    <input id="guide3" type="button" value="查看指引" onclick="guide3_1()"/>
+                </div>
+                <div class="col-6 col-12-medium imp-medium">
+                    <span class="image fit"><img src="/static/images/pic_provenance.png" alt="" /></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="five" class="main style2">
+        <div class="container">
+            <div class="row gtr-150">
+                <div class="col-6 col-12-medium">
+                    <ul class="major-icons">
+                        <li><span class="icon solid style1 major fa-code"></span></li>
+                        <li><span class="icon solid style2 major fa-bolt"></span></li>
+                        <li><span class="icon solid style3 major fa-camera-retro"></span></li>
+                        <li><span class="icon solid style4 major fa-cog"></span></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-12-medium">
+                    <header class="major">
+                        <h2>使用需知</h2>
+                    </header>
+                    <p style="font-size:20px;">本平台通过一种名为溯源图的数据类型描述用户系统上的所有行为，需要使用特定的收集工具进行获取，工具下载地址<a href="https://github.com/ashish-gehani/SPADE">在这</a>。该工具使用java编写，因此您可以使用该工具在许多不同类型的设备上收集数据：电脑、平板、手机甚至是一些固件设备。这也体现了本平台广阔的应用领域和良好的发展前景。</p>
+                    <p style="font-size:20px;">由于版权原因，我们目前还不能将这一工具直接接入我们的平台，但用户可以很方便使用这套工具收集系统行为数据。而我们也正积极地和原作者联系，希望在不久的将来这套工具会作为我们平台的一个功能供您使用</p>
+                    <input id="back" type="button" value="回到指引" onclick="window.location.href='/'"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="six" class="main style1 special">
+        <div class="container">
+            <header class="major">
+                <h2>处理过程实时展示</h2>
+            </header>
+            <p>本系统支持对数据处理过程的实时监测，提升用户的调试体验</p>
+            <div class="row gtr-150">
+                <div class="col-4 col-12-medium">
+                    <span class="image fit"><img src="/static/images/pic_classify.png" alt="" /></span>
+                    <h3>事件聚类</h3>
+                    <p>每个事件最初都有一个自己的标签，经过标签传播后，具有相同标签的节点会被“聚”在一起，实现聚类。</p>
+                    <ul class="actions special">
+                        <li><a href="/classify" class="button">运行一下</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-12-medium">
+                    <span class="image fit"><img src="/static/images/pic_center.jpg" alt="" /></span>
+                    <h3>确定中心节点</h3>
+                    <p>中心节点即为在一个溯源子图中节点重要度最高的节点。根据重要度，对溯源图中的所有节点进行排序，再结合筛选规则，筛选出重要度最高的几个节点作为中心节点。</p>
+                    <ul class="actions special">
+                        <li><a href="/center" class="button">运行一下</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-12-medium">
+                    <span class="image fit"><img src="/static/images/pic_vector.jpg" alt="" /></span>
+                    <h3>溯源图向量化</h3>
+                    <p>将溯源图进行向量化处理，得到的向量可直接作为神经网络的输入数据进行训练或行为检测。</p>
+                    <ul class="actions special">
+                        <li><a href="/vector" class="button">运行一下</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="seven" class="main style2 special">
+        <div class="container">
+            <header class="major">
+                <h2>想要提供技术支持？</h2>
+            </header>
+            <p>成为我们中的一员，为社区作出贡献。</p>
+            <ul class="actions special">
+                <li><a href="#" class="button wide primary">加入我们</a></li>
+                <li><a href="#" class="button wide">了解更多</a></li>
+            </ul>
+        </div>
+    </section>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            document.getElementsByClassName("nav-link active")[1].href = "/#five";
+            $('.col-6.col-12-medium.imp-medium').slick({
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 1500
+            });
+        });
+    </script>
+{% endblock %}

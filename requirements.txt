@@ -1,0 +1,6 @@
+Flask
+Bootstrap-Flask
+Flask-SQLAlchemy
+Flask-WTF
+pyecharts
+keras

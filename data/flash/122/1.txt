@@ -1,0 +1,5 @@
+52910.0  /2.swf
+52911.0  /bin/cp
+52912.0  /usr/bin/strace
+52921.0  /17921/mounts
+52922.0  /filesystems

@@ -1,0 +1,5 @@
+61.0  /4.swf
+62.0  /bin/cp
+63.0  /usr/bin/strace
+72.0  /6008/mounts
+73.0  /filesystems

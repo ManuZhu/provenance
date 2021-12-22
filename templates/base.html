@@ -1,0 +1,84 @@
+{% from 'bootstrap/nav.html' import render_nav_item %}
+{% from 'bootstrap/utils.html' import render_messages %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>基于溯源的存储检测一体化平台</title>
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="/static/assets/css/noscript.css" /></noscript>
+    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+    <script type="text/javascript" src="/static/intro/intro.min.js"></script>
+    <script type="text/javascript" src="/static/assets/js/guide.js"></script>
+    <script type="text/javascript" src="/static/easyui/jquery.easyui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/intro/introjs.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/easyui/easyui.css" />
+    {{ bootstrap.load_css() }}
+</head>
+
+<body class="is-preload">
+    <!-- Header -->
+    <section id="header">
+        <div class="inner">
+            <span class="icon solid major fa-cloud"></span>
+            <h1>基于溯源的入侵行为存储检测一体化平台</h1>
+            <p></p>
+            <ul class="actions special">
+                <li><a href="#one" class="button scrolly" onclick="sessionStorage.setItem('step', '0');">Discover</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" style="font-size:20px;">
+                {{ render_nav_item('index', '主页', use_li=True) }}
+                {{ render_nav_item('index', '数据收集', use_li=True) }}
+                {{ render_nav_item('graph', '数据存储', use_li=True) }}
+                {{ render_nav_item('model', '数据检测', use_li=True) }}
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="container-fluid">
+        {{ render_messages(container=False, dismissible=True) }}
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="text-center">
+        {% block footer %}
+            <!-- Footer -->
+            <section id="footer">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; 对对对队</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </section>
+        {% endblock %}
+    </footer>
+
+    {{ bootstrap.load_js() }}
+    <script src="/static/assets/js/jquery.min.js"></script>
+    <script src="/static/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/static/assets/js/browser.min.js"></script>
+    <script src="/static/assets/js/breakpoints.min.js"></script>
+    <script src="/static/assets/js/util.js"></script>
+    <script src="/static/assets/js/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/static/slick/slick.min.js"></script>
+</body>
+</html>

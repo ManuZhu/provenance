@@ -1,0 +1,11 @@
+53770.0  /9.swf
+53771.0  /bin/cp
+53772.0  /usr/bin/strace
+53781.0  /19816/mounts
+53782.0  /filesystems
+53790.0  /19.swf
+53791.0  /bin/cp
+53792.0  /usr/bin/strace
+53793.0  /19818/mounts
+53794.0  /filesystems
+53796.1  192.168.200.2:53

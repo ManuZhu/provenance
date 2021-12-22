@@ -1,0 +1,6 @@
+361.0  /19.swf
+362.0  /bin/cp
+363.0  /usr/bin/strace
+372.0  /7051/mounts
+373.0  /filesystems
+375.0  /flash/19.swf

@@ -1,0 +1,6 @@
+60801.0  /8.swf
+60802.0  /bin/cp
+60803.0  /usr/bin/strace
+60812.0  /5452/mounts
+60813.0  /filesystems
+60815.0  /flash/8.swf

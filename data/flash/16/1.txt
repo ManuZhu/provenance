@@ -1,0 +1,5 @@
+301.0  /16.swf
+302.0  /bin/cp
+303.0  /usr/bin/strace
+312.0  /6773/mounts
+313.0  /filesystems

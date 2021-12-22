@@ -1,0 +1,5 @@
+381.0  /20.swf
+382.0  /bin/cp
+383.0  /usr/bin/strace
+392.0  /7116/mounts
+393.0  /filesystems

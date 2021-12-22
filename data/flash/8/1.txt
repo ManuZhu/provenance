@@ -1,0 +1,5 @@
+141.0  /8.swf
+142.0  /bin/cp
+143.0  /usr/bin/strace
+152.0  /6264/mounts
+153.0  /filesystems
